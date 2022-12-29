@@ -48,8 +48,8 @@ export default {
     position: absolute;
     width: 286px;
     height: 34px;
-    left: 800px;
-    top: 160px;
+    left: 0;
+    top: 0;
     .link-column{
         text-align: center;
         padding: 0;
