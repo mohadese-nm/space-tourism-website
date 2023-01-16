@@ -7,10 +7,11 @@
 
       <div class="col dest-details">
         <div class="row">
+
           <div class="col dest-nav">
             <destination-nav></destination-nav>
           </div>
-
+          
           <div class="col dest-name">
             <p>MOON</p>
           </div>
@@ -50,7 +51,7 @@ import destinationNav from './destinationNav.vue';
 export default {
   name: 'moonPage',
   components: {
-    destinationNav,
+    destinationNav
   }
 }
 </script>

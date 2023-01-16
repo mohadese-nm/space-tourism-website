@@ -12,27 +12,28 @@ const routes = [
     path: '/destination',
     name: 'destination',
     component: () => import('../views/destination/destinationPage.vue'),
+    redirect: {name: 'moon'},
     children: [
       {
-        path: 'moon',
+        path: '/moon',
         name: 'moon',
         component: ()=> import('../views/destination/moonPage.vue')
       },
 
       {
-        path: 'mars',
+        path: '/mars',
         name: 'mars',
         component: ()=> import('../views/destination/marsPage.vue')
       },
 
       {
-        path: 'europa',
+        path: '/europa',
         name: 'europa',
         component: ()=> import('../views/destination/europaPage.vue')
       },
 
       {
-        path: 'titan',
+        path: '/titan',
         name: 'titan',
         component: ()=> import('../views/destination/titanPage.vue')
       }

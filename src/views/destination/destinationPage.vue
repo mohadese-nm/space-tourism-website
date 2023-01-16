@@ -5,24 +5,25 @@
       <div class="dest-header">
         <span>01</span><p class="dest-text">Pick your destination</p>
       </div>
-      
-      <div class="dest-content">
-        <moon-page></moon-page>
-      </div>
+
+        <div class="dest-nav">
+          <destination-nav></destination-nav>
+        </div>
+
+        <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
 import navigationBar from '../navigationBar.vue';
-import moonPage from './moonPage.vue'
-
+import destinationNav from './destinationNav.vue';
 
 export default {
   name: 'destinationPage',
   components: {
     navigationBar,
-    moonPage
+    destinationNav
   }
 }
 </script>
@@ -76,6 +77,14 @@ position: relative;
       text-transform: uppercase;
       color: white;
     }
+  }
+
+  .dest-nav {
+    width: 285px;
+    height: 34px;
+    position: absolute;
+    left: 900px;
+    top: 310px;
   }
 
 }
