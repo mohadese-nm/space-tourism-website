@@ -9,7 +9,7 @@
           <p class="crew-text">meet your crew</p>
         </div>
 
-        <div class="col crew info">
+        <div class="col crew-info">
           <router-view></router-view>
         </div>
       </div>
@@ -80,6 +80,14 @@ export default {
       text-transform: uppercase;
       color: white;
     }
+  }
+
+  .crew-info{
+    position: absolute;
+    left: 11vw;
+    top: 44vh;
+    width: 100%;
+    height: 47vh;
   }
 }
 </style>
