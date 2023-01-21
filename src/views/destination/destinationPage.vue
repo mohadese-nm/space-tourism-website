@@ -7,7 +7,7 @@
       </div>
 
         <div class="dest-nav">
-          <destination-nav></destination-nav>
+          
         </div>
 
         <router-view></router-view>
@@ -17,13 +17,12 @@
 
 <script>
 import navigationBar from '../navigationBar.vue';
-import destinationNav from './destinationNav.vue';
+
 
 export default {
   name: 'destinationPage',
   components: {
-    navigationBar,
-    destinationNav
+    navigationBar
   }
 }
 </script>
