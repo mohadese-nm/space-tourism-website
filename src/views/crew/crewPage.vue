@@ -3,8 +3,8 @@
     <navigation-bar></navigation-bar>
     <div class="container">
       <div class="row">
-        
-        <div class=" col crew-header">
+
+        <div class=" col d-block crew-header">
           <span>02</span>
           <p class="crew-text">meet your crew</p>
         </div>
