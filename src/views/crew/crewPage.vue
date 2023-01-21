@@ -2,14 +2,17 @@
   <div class="content">
     <navigation-bar></navigation-bar>
     <div class="container">
-      <div class="crew-header">
-        <span>02</span>
-        <p class="crew-text">meet your crew</p>
-      </div>
-  
-      <router-view></router-view>
+      <div class="row">
 
-      <div class="cre-nav">circle circle circle</div>
+        <div class=" col crew-header">
+          <span>02</span>
+          <p class="crew-text">meet your crew</p>
+        </div>
+
+        <div class="col crew info">
+          <router-view></router-view>
+        </div>
+      </div>
     </div>
   </div>
 </template>
