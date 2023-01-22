@@ -3,20 +3,32 @@
     <div class="row">
         <div class="col crew-info">
             <div class="row">
-                <div class="col-12 crew-role">
+                <div class=" col crew-header">
+                    <span>02</span>
+                    <p class="crew-text">meet your crew</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col crew-role">
                     <p>commander</p>
                 </div>
-                <div class="col-12 crew-name">
+            </div>
+            <div class="row">
+                <div class="col crew-name">
                     <p>Douglas Hurley</p>
                 </div>
-                <div class="col-12 crew-about mt-2">
+            </div>
+            <div class="row">
+                <div class="col crew-about mt-2">
                     <p>
                         Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former 
                         NASA astronaut. He launched into space for the third time as commander of Crew 
                         Dragon Demo-2.
                     </p>
                 </div>
-                <div class="col-12 crew-nav">
+            </div>
+            <div class="row">
+                <div class="col crew-nav">
 
                 </div>
             </div>
@@ -39,6 +51,36 @@ export default {
 @use '@/assets/styles/-variables.scss' as *;
 .container{
     .crew-info{
+        position: relative;
+        top: 16vh;
+        left: 8vw;
+        .crew-header{
+            span{
+            font-family: $barlowCond;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 34px;
+            letter-spacing: 4.725px;
+            color: white;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            }
+
+            .crew-text{
+                display: inline-block;
+                position: relative;
+                left: 2vw;
+                font-family: $barlowCond;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 34px;
+                letter-spacing: 4.725px;
+                text-transform: uppercase;
+                color: white;
+            }
+        }
         .crew-role{
             font-family: $belle;
             font-style: normal;
@@ -76,7 +118,7 @@ export default {
     }
 
     .crew-image{
-        margin-top: -20vh;
+        
         img{
 
         }
