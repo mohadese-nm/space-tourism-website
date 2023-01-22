@@ -56,7 +56,7 @@ export default {
 .container{
     .crew-info{
         margin-top: 16vh;
-        margin-left: 8vw;
+        margin-left: 7vw;
         .crew-header{
             span{
             font-family: $barlowCond;
@@ -118,6 +118,10 @@ export default {
                 /* or 178% */
                 color: #D0D6F9;
             }
+        }
+
+        .crew-nav{
+            margin-top: 17vh;
         }
     }
 

@@ -1,32 +1,28 @@
 <template>
   <div class="container">
         <div class="row align-items-center justify-content-center nav-links">
-            <div class="col link-column me-3">
-                <router-link :to="{ name: 'douglas' }">
+            <div class="col link-column  me-3">   
+                <router-link :to="{ name: 'douglas' }" class="crew-link">
                     <div class="circle"></div>
                 </router-link>
-
             </div>
 
-            <div class="col link-column me-3">
-                <router-link :to="{ name: 'mark' }">
+            <div class="col link-column  me-3">
+                <router-link :to="{ name: 'mark' }" class="crew-link">
                     <div class="circle"></div>
                 </router-link>
-
             </div>
 
-            <div class="col link-column me-3">
-                <router-link :to="{ name: 'victor' }">
+            <div class="col link-column  me-3">
+                <router-link :to="{ name: 'victor' }" class="crew-link">
                     <div class="circle"></div>
                 </router-link>
-
             </div>
 
             <div class="col link-column">
-                <router-link :to="{ name: 'anousheh' }">
+                <router-link :to="{ name: 'anousheh' }" class="crew-link">
                     <div class="circle"></div>
                 </router-link>
-
             </div>
         </div>
     </div>
@@ -41,27 +37,33 @@ export default {
 <style lang="scss" scoped>
 @use '@/assets/styles/-variables.scss' as *;
 .nav-links{
-    width: 9vw;
-    height: 1vh;
+    width: 135px;
+    height: 16px;
     .link-column{
-        text-align: center;
         padding: 0;
-
-        .circle{
+        .crew-link{
+            .circle{
             border-radius: 50%;
             width: 15px;
             height: 15px;
             background-color: white;
             opacity: 0.17;
+            }
 
             &:hover {
-                opacity: 0.5;
+                .circle{
+                    opacity: 0.5;
+                }
             }
-            
+
             &.router-link-active {
-                opacity: 1;
+                .circle{
+                    opacity: 1;
+                }
             }
+        
         }
+        
     }
 }
 </style>
