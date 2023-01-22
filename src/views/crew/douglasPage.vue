@@ -42,8 +42,12 @@
 </template>
 
 <script>
+import crewNav from './crewNav.vue';
 export default {
-
+  name: 'douglasPage',
+  components: {
+    crewNav
+  }
 }
 </script>
 
