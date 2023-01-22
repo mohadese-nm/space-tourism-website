@@ -29,7 +29,7 @@
             </div>
             <div class="row">
                 <div class="col crew-nav">
-
+                    <crew-nav></crew-nav>
                 </div>
             </div>
         </div>
