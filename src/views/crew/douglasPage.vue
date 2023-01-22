@@ -74,5 +74,12 @@ export default {
             }
         }
     }
+
+    .crew-image{
+        margin-top: -20vh;
+        img{
+
+        }
+    }
 }
 </style>
