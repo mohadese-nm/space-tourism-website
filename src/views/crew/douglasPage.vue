@@ -82,6 +82,7 @@ export default {
             }
         }
         .crew-role{
+            margin-top: 15vh;
             font-family: $belle;
             font-style: normal;
             font-weight: 400;
