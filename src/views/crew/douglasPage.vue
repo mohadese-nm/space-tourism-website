@@ -51,9 +51,8 @@ export default {
 @use '@/assets/styles/-variables.scss' as *;
 .container{
     .crew-info{
-        position: relative;
-        top: 16vh;
-        left: 8vw;
+        margin-top: 16vh;
+        margin-left: 8vw;
         .crew-header{
             span{
             font-family: $barlowCond;
@@ -121,7 +120,7 @@ export default {
     .crew-image{
         
         img{
-
+            margin-top: 14.3vh;
         }
     }
 }
