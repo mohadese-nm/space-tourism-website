@@ -128,7 +128,8 @@ export default {
     .crew-image{
         
         img{
-            margin-top: 14.3vh;
+            position: absolute;
+            bottom: 0;
         }
     }
 }
