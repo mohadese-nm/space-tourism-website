@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-        <div class="col crew-info">
+        <div class="col-lg-6 crew-info">
             <div class="row">
                 <div class=" col crew-header">
                     <span>02</span>
@@ -55,8 +55,8 @@ export default {
 <style lang="scss" scoped>
 @use '@/assets/styles/-variables.scss' as *;
 .container{
+    margin-top: 16vh;
     .crew-info{
-        margin-top: 16vh;
         margin-left: 7vw;
         .crew-header{
             span{
@@ -122,7 +122,7 @@ export default {
         }
 
         .crew-nav{
-            margin-top: 17vh;
+            margin-top: 1vh;
         }
     }
 
