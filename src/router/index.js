@@ -75,25 +75,25 @@ const routes = [
   {
     path: '/technology',
     name: 'technology',
-    component: () => import('../views/technologyPage.vue'),
-    redirect: {name: 'douglas'},
+    component: () => import('../views/technology/techPage.vue'),
+    redirect: {name: 'launchVehicle'},
     children: [
       {
-        path: '/douglas',
-        name: 'douglas',
-        component: ()=> import('../views/crew/douglasPage.vue')
+        path: '/launchVehicle',
+        name: 'launchVehicle',
+        component: ()=> import('../views/technology/launchVehicle.vue')
       },
 
       {
-        path: '/mark',
-        name: 'mark',
-        component: ()=> import('../views/crew/markPage.vue')
+        path: '/spacePort',
+        name: 'spacePort',
+        component: ()=> import('../views/technology/spacePort.vue')
       },
 
       {
-        path: '/victor',
-        name: 'victor',
-        component: ()=> import('../views/crew/victorPage.vue')
+        path: '/spaceCapsule',
+        name: 'spaceCapsule',
+        component: ()=> import('../views/technology/spaceCapsule.vue')
       }
     ]
   }
