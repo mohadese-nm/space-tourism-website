@@ -75,7 +75,27 @@ const routes = [
   {
     path: '/technology',
     name: 'technology',
-    component: () => import ('../views/technologyPage.vue')
+    component: () => import('../views/technologyPage.vue'),
+    redirect: {name: 'douglas'},
+    children: [
+      {
+        path: '/douglas',
+        name: 'douglas',
+        component: ()=> import('../views/crew/douglasPage.vue')
+      },
+
+      {
+        path: '/mark',
+        name: 'mark',
+        component: ()=> import('../views/crew/markPage.vue')
+      },
+
+      {
+        path: '/victor',
+        name: 'victor',
+        component: ()=> import('../views/crew/victorPage.vue')
+      }
+    ]
   }
 
 ]
