@@ -8,7 +8,7 @@
                     <p class="header-text"> space launch 101</p>
                 </div>
             </div>
-            <div class="row main-text align-items-center">
+            <div class="row main-text">
                 <div class="col-lg-3 tech-nav">
                     <tech-nav></tech-nav>
                 </div>
@@ -47,7 +47,7 @@ import techNav from './techNav.vue'
 export default {
     name: 'launchVehicle',
     components: {
-        tecNav
+        techNav
     }
 }
 </script>
@@ -89,6 +89,9 @@ export default {
 
             .main-text{
                 margin-top: 14vh;
+                .tech-nav{
+
+                }
                 .tech-description{
                 .terminology{
 
