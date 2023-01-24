@@ -20,7 +20,7 @@
                     </div>
                     <div class="row">
                         <div class="col tech-name">
-                            <p>LAUNCH VEHICLE</p>
+                            <p>launch vehicle</p>
                         </div>
                     </div> 
                     <div class="row">   
@@ -89,9 +89,6 @@ export default {
 
             .main-text{
                 margin-top: 14vh;
-                .tech-nav{
-
-                }
                 .tech-description{
                 .terminology{
 
@@ -114,6 +111,7 @@ export default {
                         font-size: 56px;
                         line-height: 64px;
                         color: #FFFFFF;
+                        text-transform: uppercase;
                     }
                 }
 
