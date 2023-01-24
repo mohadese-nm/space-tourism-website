@@ -10,7 +10,7 @@
             </div>
             <div class="row main-text align-items-center">
                 <div class="col-lg-3 tech-nav">
-
+                    <tech-nav></tech-nav>
                 </div>
                 <div class="col-lg-9 tech-description">
                     <div class="row">
@@ -43,9 +43,12 @@
 </template>
 
 <script>
-
+import techNav from './techNav.vue'
 export default {
-    name: 'launchVehicle'
+    name: 'launchVehicle',
+    components: {
+        tecNav
+    }
 }
 </script>
 
