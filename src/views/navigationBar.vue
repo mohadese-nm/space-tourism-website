@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-fluid">
         <div class="navigation">
             <div class="nav-logo">
                 <img src="../assets/shared/logo.svg">
@@ -11,7 +11,7 @@
                     <div class="row align-items-center justify-content-center">
                         <div class="col link-column me-2">
                             <router-link :to="{name: 'home'}" class="page-link">
-                                00 HOME
+                                <span>00</span> HOME
                                 <div class="underline"></div>
                             </router-link>
 
@@ -19,7 +19,7 @@
 
                         <div class="col link-column me-2">
                             <router-link :to="{name: 'destination'}" class="page-link">
-                                01 DESTINATION
+                                <span>01</span> DESTINATION
                                 <div class="underline"></div>
                             </router-link>
                             
@@ -27,7 +27,7 @@
 
                         <div class="col link-column me-2">
                             <router-link :to="{name: 'crew'}" class="page-link">
-                                02 CREW
+                                <span>02</span> CREW
                                 <div class="underline"></div>
                             </router-link>
                             
@@ -35,7 +35,7 @@
 
                         <div class="col link-column">
                             <router-link :to="{name: 'technology'}" class="page-link">
-                                03 TECHNOLOGY
+                                <span>03</span> TECHNOLOGY
                                 <div class="underline"></div>
                             </router-link>
                             
@@ -92,7 +92,7 @@
         position: absolute;
         width: 62.3%;
         height: 96px;
-        right: -100px;
+        left: 600px;
         top: 0px;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40px);
@@ -117,6 +117,7 @@
                     line-height: 19px;
                     letter-spacing: 2.7px;
                     color: white;
+
                     .underline {
                         margin-top: 35px;
                         height: 3px;
@@ -147,7 +148,29 @@
             display: none;
         }
         .nav-blur{
-            width: 58%;
+            width: 63%;
+            left: auto;
+            right: -12px;
+            .nav-links{
+                width: 395px;
+                left: 0;
+                top: 38px;
+                bottom: 0;
+                right: 0;
+                margin-right: auto;
+                margin-left: auto;
+                .page-link{
+                    font-family: $barlowCond;
+                    font-size: 12px;
+                    line-height: 17px;
+                    letter-spacing: 2.3625px;
+                    font-weight: lighter;
+                    span{
+                        display: none;
+                    }
+
+                }
+            }
         }
     }
 }
