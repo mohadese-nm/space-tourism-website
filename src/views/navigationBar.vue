@@ -92,7 +92,7 @@
         position: absolute;
         width: 62.3%;
         height: 96px;
-        left: 600px;
+        right: -100px;
         top: 0px;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40px);
@@ -137,6 +137,17 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navigation{
+        .nav-line{
+            display: none;
+        }
+        .nav-blur{
+            width: 58%;
         }
     }
 }
