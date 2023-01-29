@@ -5,7 +5,6 @@
       <div class="dest-header">
         <span>01</span><p class="dest-text">Pick your destination</p>
       </div>
-      
         <router-view></router-view>
     </div>
   </div>
