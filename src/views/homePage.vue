@@ -140,4 +140,10 @@ export default {
         
     }
 }
+
+@media screen and (max-width:768px) {
+    .content{
+        background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+}
 </style>
