@@ -82,7 +82,7 @@
         position: absolute;
         width: 500px;
         height: 1px;
-        left: 112px;
+        left: 180px;
         top: 48px;
         background-color: white;
         mix-blend-mode: normal;
