@@ -144,6 +144,7 @@
 
 @media screen and (max-width: 768px){
     .navigation{
+        top: 0;
         .nav-line{
             display: none;
         }
