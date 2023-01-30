@@ -18,13 +18,11 @@
                 </div>
           
                 <div class="col home-explore">
-                    <div class="explore-hover">
                         <div class="explore-oval">
                             <p class="explore-text">
                                 EXPLORE
                             </p>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -53,7 +51,7 @@ export default {
     background-size: cover;
 
     .home-content{
-        margin: 37vh 160px 0 160px;
+        margin: 44vh 160px 0 160px;
         .home-text{
             .home-p1{
                 height: 34px;
@@ -67,6 +65,8 @@ export default {
                 color: $lightGray;
             }
             .home-p2{
+                margin-left: -5px;
+                max-width: 446px;
                 font-family: $belle;
                 font-style: normal;
                 font-weight: 400;
@@ -75,6 +75,7 @@ export default {
                 color: white;
             }
             .home-p3{
+                max-width: 446px;
                 font-family: $barlow;
                 font-style: normal;
                 font-weight: 400;
@@ -85,9 +86,11 @@ export default {
 
         }
         .home-explore{
-            width: 274px;
-            height: 274px;
+            padding: 14vh 0  0 26vw;
             .explore-oval {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 274px;
                 height: 274px;
                 background-color: white;
@@ -99,6 +102,8 @@ export default {
                 }
 
                 .explore-text {
+                    text-align: center;
+                    margin: auto 0 auto 0;
                     font-family: $belle;
                     font-style: normal;
                     font-weight: 400;
