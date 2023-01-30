@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-fluid">
         <div class="navigation">
             <div class="nav-logo">
                 <img src="../assets/shared/logo.svg">

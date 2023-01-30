@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <navigation-bar></navigation-bar>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col home-text">
                     <p class="home-p1">
@@ -144,6 +144,10 @@ export default {
 @media screen and (max-width:768px) {
     .content{
         background-image: url(../assets/home/background-home-tablet.jpg);
+        .home-text{
+            top: 200px;
+            text-align: center;
+        }
     }
 }
 </style>
