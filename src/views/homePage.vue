@@ -53,7 +53,10 @@ export default {
     .home-content{
         margin: 44vh 160px 0 160px;
         .home-text{
+            max-width: 450px;
             .home-p1{
+                display: flex;
+                justify-content: center;
                 height: 34px;
                 max-width: 385px;
                 font-family: $barlowCond;
@@ -65,6 +68,8 @@ export default {
                 color: $lightGray;
             }
             .home-p2{
+                display: flex;
+                justify-content: center;
                 margin-left: -5px;
                 max-width: 446px;
                 font-family: $belle;
@@ -75,6 +80,8 @@ export default {
                 color: white;
             }
             .home-p3{
+                display: flex;
+                justify-content: center;
                 max-width: 446px;
                 font-family: $barlow;
                 font-style: normal;
@@ -86,6 +93,8 @@ export default {
 
         }
         .home-explore{
+            display: flex;
+            justify-content: center;
             padding: 14vh 0  0 26vw;
             .explore-oval {
                 display: flex;
@@ -123,9 +132,32 @@ export default {
     .content{
         height: 1024px;
         background-image: url(../assets/home/background-home-tablet.jpg);
-        .home-text{
-            top: 200px;
-            text-align: center;
+        .home-content{
+            margin-top: 19vh;
+            .home-text{
+                top: 200px;
+                text-align: center;
+                .home-p1{
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    letter-spacing: 3.375px;
+                }
+                .home-p2{
+                    line-height: 150px;
+                }
+                .home-p3{
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+            .home-explore{
+                padding: 0;
+                .explore-oval{
+                    width: 242px;
+                    height: 242px;
+                }
+            }
         }
     }
 }
