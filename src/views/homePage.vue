@@ -119,8 +119,9 @@ export default {
     
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
     .content{
+        height: 1024px;
         background-image: url(../assets/home/background-home-tablet.jpg);
         .home-text{
             top: 200px;
