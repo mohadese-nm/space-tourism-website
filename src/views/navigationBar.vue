@@ -1,12 +1,13 @@
 <template>
     <div class="container-fluid">
-        <div class="navigation">
-            <div class="nav-logo">
+        <div class=" row navigation">
+            <div class="col nav-logo">
                 <img src="../assets/shared/logo.svg">
             </div>
-            <div class="nav-line">
+            <div class="col nav-line">
+                <div class="line"></div>
             </div>
-            <div class="nav-blur">
+            <div class="col nav-blur">
                 <div class="nav-links">
                     <div class="row align-items-center justify-content-center">
                         <div class="col link-column me-2">
@@ -63,46 +64,39 @@
     top: 40px;
 
     .nav-logo{
-        position: absolute;
-        width: 48px;
-        height: 48px;
-        left: 0;
-        top: 24px;
-        background-color: white;
+        max-width: 48px;
+        max-height: 48px;
+        margin-top: 24px;
+        margin-left: 20px;
         img{
-            position: absolute;
             width: 48px;
             height: 48px;
-            left: 0;
-            top: 0;
             background: #0B0D17;
         }
     }
     .nav-line{
-        position: absolute;
-        width: 500px;
-        height: 1px;
-        left: 180px;
-        top: 48px;
-        background-color: white;
-        mix-blend-mode: normal;
-        opacity: 0.25;
+        display: flex;
+        justify-content: end;
+        .line{
+            margin: 43px -16px 0 0;
+            width: 400px;
+            height: 1px;
+            background-color: white;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+        }
     }
     .nav-blur{
-        position: absolute;
-        width: 62.3%;
+        max-width: 840px;
         height: 96px;
-        left: 600px;
-        top: 0px;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40px);
 
         .nav-links{
-            position: absolute;
             width: 555px;
             height: 19px;
-            left: 80px;
-            top: 39px;
+            margin-left: 80px;
+            margin-top: 39px;
 
             .link-column{
                 text-align: center;
@@ -142,8 +136,10 @@
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 992px){
     .navigation{
+        display: flex;
+        justify-content: space-between;
         top: 0;
         .nav-line{
             display: none;

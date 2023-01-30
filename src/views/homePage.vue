@@ -3,7 +3,7 @@
         <navigation-bar></navigation-bar>
         <div class="container-fluid">
             <div class="row home-content justify-content-center align-items-center">
-                <div class="col home-text">
+                <div class="col-lg home-text">
                     <p class="home-p1">
                         SO, YOU WANT TO TRAVEL TO
                     </p>
@@ -17,7 +17,7 @@
                     </p>
                 </div>
           
-                <div class="col home-explore">
+                <div class="col-lg home-explore">
                         <div class="explore-oval">
                             <p class="explore-text">
                                 EXPLORE
@@ -128,7 +128,7 @@ export default {
     
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:992px) {
     .content{
         height: 1024px;
         background-image: url(../assets/home/background-home-tablet.jpg);
@@ -141,21 +141,35 @@ export default {
                     font-size: 20px;
                     line-height: 24px;
                     text-align: center;
-                    letter-spacing: 3.375px;
-                }
-                .home-p2{
-                    line-height: 150px;
-                }
-                .home-p3{
-                    font-size: 16px;
-                    line-height: 28px;
                 }
             }
             .home-explore{
                 padding: 0;
+                margin-top: 150px;
                 .explore-oval{
                     width: 242px;
                     height: 242px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .content{
+        .home-content{
+            .home-text{
+                .home-p1{
+                    letter-spacing: 3.375px;
+                }
+                .home-p2{
+                    line-height: 150px;
+                    text-align: center;
+                }
+                .home-p3{
+                    font-size: 16px;
+                    line-height: 28px;
+                    text-align: center;
                 }
             }
         }
