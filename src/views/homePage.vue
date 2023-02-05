@@ -3,7 +3,7 @@
         <navigation-bar></navigation-bar>
         <div class="container-fluid">
             <div class="row home-content justify-content-center align-items-center">
-                <div class="col-lg home-text">
+                <div class="col-xl home-text">
                     <p class="home-p1">
                         SO, YOU WANT TO TRAVEL TO
                     </p>
@@ -17,7 +17,7 @@
                     </p>
                 </div>
           
-                <div class="col-lg home-explore">
+                <div class="col-xl home-explore">
                         <div class="explore-oval">
                             <p class="explore-text">
                                 EXPLORE
@@ -128,7 +128,17 @@ export default {
     
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:1444px){
+    .content{
+        .home-content{
+            .home-explore{
+                padding-left: 9vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
     .content{
         height: 1024px;
         background-image: url(../assets/home/background-home-tablet.jpg);
@@ -145,7 +155,7 @@ export default {
             }
             .home-explore{
                 padding: 0;
-                margin-top: 150px;
+                margin-top: 100px;
                 .explore-oval{
                     width: 242px;
                     height: 242px;
@@ -154,6 +164,7 @@ export default {
         }
     }
 }
+
 
 @media screen and (max-width:768px){
     .content{

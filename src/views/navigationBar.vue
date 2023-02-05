@@ -136,7 +136,7 @@
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1200px){
     .navigation{
         display: flex;
         justify-content: space-between;
@@ -145,7 +145,7 @@
             display: none;
         }
         .nav-blur{
-            width: 63%;
+            max-width: 60%;
             left: auto;
             right: -12px;
             .nav-links{
