@@ -9,7 +9,7 @@
             </div>
             <div class="col nav-blur">
                 <div class="nav-links">
-                    <div class="row align-items-center justify-content-center">
+                    <div class="row links-row align-items-center justify-content-center">
                         <div class="col link-column me-2">
                             <router-link :to="{name: 'home'}" class="page-link">
                                 <span>00</span> HOME
@@ -173,6 +173,43 @@
 }
 
 @media screen and (max-width: 768px){
-    
+    .navigation{
+        .nav-blur{
+            max-width: 70%;
+            height: 100vh;
+            .nav-links{
+                .links-row{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 17%;
+                    padding-left: 12%;
+                    max-width: fit-content;
+                    .link-column{
+                        text-align: start;
+                        margin-right: 0!important;
+                        margin-bottom: 3em;
+                        .page-link{
+                            color: $lightGray;
+                            span{
+                                display: inline-block;
+                            }
+                            &:hover{
+                                .underline{
+                                    display: none;
+                                }
+                                opacity: 0.5;
+                            }
+                            &.router-link-active{
+                                .underline{
+                                    display: none;
+                                }
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 </style>
