@@ -2,13 +2,29 @@
     <div class="container-fluid">
         <div class=" row navigation">
             <div class="col nav-logo">
-                <img src="../assets/shared/logo.svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd">
+                    <circle cx="24" cy="24" r="24" fill="#FFF"/>
+                    <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g>
+                </svg>
             </div>
             <div class="col nav-line">
                 <div class="line"></div>
             </div>
+            <div class="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                    <g fill="#D0D6F9" fill-rule="evenodd">
+                    <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g>
+                </svg>
+            </div>
+            <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd">
+                    <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
+                    <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g>
+                </svg>
+            </div>
             <div class="col nav-blur">
                 <div class="nav-links">
+                    
                     <div class="row links-row align-items-center justify-content-center">
                         <div class="col link-column me-2">
                             <router-link :to="{name: 'home'}" class="page-link">
@@ -86,6 +102,20 @@
             opacity: 0.25;
         }
     }
+
+    .burger{
+        display: none;
+        width: 25px;
+        height: 22px;
+        padding: 0;
+    }
+
+    .close{
+        display: none;
+        width: 25px;
+        height: 22px;
+        padding: 0;
+    }
     .nav-blur{
         max-width: 840px;
         height: 96px;
@@ -97,6 +127,7 @@
             height: 19px;
             margin-left: 80px;
             margin-top: 39px;
+
 
             .link-column{
                 text-align: center;
@@ -174,9 +205,28 @@
 
 @media screen and (max-width: 768px){
     .navigation{
+        .nav-logo{
+            width: 40px;
+            height: 40px;
+        }
+        .burger{
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            left: 90vw;
+            top: 24px;
+        }
+        .close{
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            left: 90vw;
+            top: 24px;
+        }
         .nav-blur{
             max-width: 70%;
             height: 100vh;
+            display: none;
             .nav-links{
                 .links-row{
                     display: flex;
