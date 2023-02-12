@@ -251,6 +251,7 @@
             max-width: 70%;
             height: 100vh;
             transform: translateX(100%);
+            transition: transform 350ms ease-out;
             .nav-links{
                 .links-row{
                     display: flex;
