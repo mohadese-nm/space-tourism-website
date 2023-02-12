@@ -11,7 +11,11 @@
 </script>
 
 <style lang="scss">
-.content{
-  width: 100%;
-}
+ body{
+  overflow: hidden;
+    .content{
+      width: 100%;
+  }
+ } 
+
 </style>

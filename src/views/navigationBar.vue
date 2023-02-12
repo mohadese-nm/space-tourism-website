@@ -66,9 +66,14 @@
 </template>
 
 <script>
-
     export default{
-    name: 'navigationBar'
+    name: 'navigationBar',
+    data()
+    {
+        return {
+            navVisible: false
+        }
+    }
     }
 </script>
 
@@ -213,12 +218,15 @@
         }
         .burger{
             display: block;
+            z-index: 10;
             cursor: pointer;
+            border: none;
             position: absolute;
             left: 90vw;
             top: 24px;
         }
         .close{
+            z-index: 10;
             display: none;
             cursor: pointer;
             position: absolute;
@@ -228,7 +236,7 @@
         .nav-blur{
             max-width: 70%;
             height: 100vh;
-            display: none;
+            //transform: translateX(100%);
             .nav-links{
                 .links-row{
                     display: flex;
