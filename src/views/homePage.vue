@@ -58,7 +58,7 @@ export default {
                 display: flex;
                 justify-content: center;
                 height: 34px;
-                max-width: 385px;
+                max-width: 446px;
                 font-family: $barlowCond;
                 font-style: normal;
                 font-weight: 400;
@@ -169,6 +169,7 @@ export default {
 @media screen and (max-width:768px){
     .content{
         .home-content{
+            margin: 10vh 100px 0 100px;
             .home-text{
                 .home-p1{
                     letter-spacing: 3.375px;
@@ -180,6 +181,57 @@ export default {
                 .home-p3{
                     font-size: 16px;
                     line-height: 28px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .content{
+        .home-content{
+            margin: 10vh 40px 0 40px;
+            .home-text{
+                .home-p1{
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+                    letter-spacing: 2.7px;
+                }
+                .home-p2{
+                    font-size: 95px;
+                    line-height: 110px;
+                    text-align: center;
+                }
+                .home-p3{
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    .content{
+        .home-content{
+            margin: 10vh 40px 0 40px;
+            .home-text{
+                .home-p1{
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    letter-spacing: 2.7px;
+                }
+                .home-p2{
+                    font-size: 80px;
+                    line-height: 100px;
+                }
+                .home-p3{
+                    font-size: 15px;
+                    line-height: 25px;
                     text-align: center;
                 }
             }
