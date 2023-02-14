@@ -37,7 +37,7 @@ position: relative;
     width: 382px;
     height: 34px;
     left: 166.5px;
-    top: 212px;
+    top: 200px;
     span{
       width: 26px;
       position: absolute;
