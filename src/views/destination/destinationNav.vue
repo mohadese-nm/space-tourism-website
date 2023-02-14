@@ -1,6 +1,6 @@
 <template>
-    <div class="container nav-links">
-        <div class="row align-items-center justify-content-center">
+    <div class="container-fluid nav-links">
+        <div class="row align-items-center">
             <div class="col link-column me-3">
                 <router-link :to="{ name: 'moon' }" class="dest-link">
                     MOON
@@ -45,11 +45,9 @@ export default {
 <style lang="scss" scoped>
 @use '@/assets/styles/-variables.scss' as *;
 .nav-links{
-    position: absolute;
+    margin: 0;
     width: 286px;
     height: 34px;
-    left: 0;
-    top: 0;
     .link-column{
         text-align: center;
         padding: 0;
