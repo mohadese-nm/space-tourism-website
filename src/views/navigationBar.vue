@@ -110,7 +110,7 @@
     }
     .nav-line{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         .line{
             margin: 43px -16px 0 0;
             width: 400px;
