@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
 @use '@/assets/styles/-variables.scss' as *;
 .content {
-position: relative;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -81,5 +81,28 @@ position: relative;
     top: 310px;
   }
 
+}
+
+@media screen and (max-width:1200px){
+  .content{
+    background-image: url(@/assets/destination/background-destination-tablet.jpg);
+    height: 1024px;
+    .dest-header{
+      top: 136px;
+      left: 4vw;
+      width: 272px;
+      height: 24px;
+      span{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+      }
+      .dest-text{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+      }
+    }
+  }
 }
 </style>
