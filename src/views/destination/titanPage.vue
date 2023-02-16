@@ -1,36 +1,35 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col dest-img">
+    <div class="row dest-content">
+      <div class="col-12 col-xl-7 dest-img">
         <img src="../../assets/destination/image-titan.webp">
       </div>
 
-      <div class="col dest-details">
+      <div class="col-12 col-xl-5 dest-details">
         <div class="row">
-          <div class="col dest-nav">
+          <div class="col-12 dest-nav">
             <destination-nav></destination-nav>
           </div>
 
-          <div class="col dest-name">
+          <div class="col-12 dest-name">
             <p>TITAN</p>
           </div>
 
-          <div class="col dest-description">
+          <div class="col-12 dest-description">
             <p>The only moon known to have a dense atmosphere other than Earth, Titan is a 
             home away from home (just a few hundred degrees colder!). As a bonus, you get 
             striking views of the Rings of Saturn.</p>
           </div>
-          <div class="col line"></div>
+          <div class="col-12 line"></div>
 
-          <div class="col dest-info">
-
-            <div class="row">
+          <div class="col-12 mt-3 dest-info">
+            <div class="row distance">
               <div class="col dest-distance">
                 <p class="info-title">AVG. DISTANCE</p>
                 <p class="info-number">1.6 BIL. km</p>
               </div>
 
-              <div class="col dest-time ms-5">
+              <div class="col dest-time">
                 <p class="info-title">Est. travel time</p>
                 <p class="info-number">7 years</p>
               </div>
@@ -57,144 +56,165 @@ export default {
 <style lang="scss" scoped>
 @use '@/assets/styles/-variables.scss' as *;
 
-.dest-img {
-  position: absolute;
-  width: 445px;
-  height: 445px;
-  left: 230px;
-  top: 343px;
+.container{
+  .dest-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 30vh auto 0 6vw;
+    .dest-img{
+      width: 445px;
+      height: 445px;
+      padding-top: 7vh;
+    }
+
+  .dest-details{
+    width: 470px;
+    height: 472px;
+    .dest-name {
+        height: 115px;
+        margin-top: 7vh;
+        p{
+          font-family: $belle;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 100px;
+          line-height: 115px;
+          color: white;
+        }
+      }
+      .dest-description{
+        height: 128px;
+        margin-top: 7vh;
+        p{
+          font-family: $barlow;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          color: $lightGray;
+        }
+      }
+      .line{
+        height: 1px;
+        width: 436px;
+        background-color: #383B4B;
+        mix-blend-mode: normal;
+        margin-top: 7vh;
+      }
+      .dest-info{
+        width: 380px;
+        height: 62px;
+        .dest-distance{
+          height: 62px;
+          .info-title{
+            height: 17px;
+            font-family: $barlowCond;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 2.3625px;
+            text-transform: uppercase;
+            color: $lightGray;
+          }
+          .info-number{
+            height: 32px;
+            font-family: $belle;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            text-transform: uppercase;
+            color: white;
+          }
+        }
+        .dest-time{
+          height: 62px;
+          padding-left: 1vw;
+          .info-title {
+              height: 17px;
+              font-family: $barlowCond;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              letter-spacing: 2.3625px;
+              text-transform: uppercase;
+              color: $lightGray;
+            }
+          
+            .info-number {
+              height: 32px;
+              font-family: $belle;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 28px;
+              line-height: 32px;
+              text-transform: uppercase;
+              color: white;
+            }
+        }
+      }
+    }
+  }
 }
 
-.dest-details {
-  position: absolute;
-  width: 445px;
-  height: 472px;
-  left: 900px;
-  top: 310px;
-
-  .dest-name {
-    position: absolute;
-    height: 115px;
-    left: 0.11%;
-    right: 25.06%;
-    top: calc(50% - 115px/2 - 107.5px);
-
-    p {
-      font-family: $belle;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 100px;
-      line-height: 115px;
-      color: white;
-    }
-  }
-
-  .dest-description {
-    position: absolute;
-    height: 128px;
-    left: 0%;
-    right: 0.22%;
-    top: calc(50% - 128px/2 + 28px);
-
-    p {
-      font-family: $barlow;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 32px;
-      color: $lightGray;
-    }
-  }
-
-  .line {
-    position: absolute;
-    left: 0.22%;
-    right: 0%;
-    top: 86.93%;
-    bottom: 18.86%;
-    height: 1px;
-    width: 436px;
-    background-color: #383B4B;
-    mix-blend-mode: normal;
-  }
-
-  .dest-info {
-    position: absolute;
-    left: 0.11%;
-    top: 87.08%;
-    bottom: 0%;
-    width: 360px;
-    height: 62px;
-
-    .dest-distance {
-      position: absolute;
-      left: 0.11%;
-      right: 67.75%;
-      top: 87.08%;
-      bottom: 0%;
-      height: 62px;
-
-      .info-title {
-        position: absolute;
-        height: 17px;
-        top: calc(50% - 17px/2 - 22px);
-        font-family: $barlowCond;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 2.3625px;
-        text-transform: uppercase;
-        color: $lightGray;
+@media screen and (max-width:1200px){
+  .container{
+    .dest-content{
+      margin: 16vh auto 0 auto;
+      max-width: 574px;
+      justify-content: center;
+      .dest-img{
+        max-width: 350px;
+        max-height: 350px;
+        padding-top: 0;
+        img{
+          width: 350px;
+          height: 350px;
+        }
       }
-
-      .info-number {
-        position: absolute;
-        height: 32px;
-        top: calc(50% - 32px/2 + 14.5px);
-        font-family: $belle;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 32px;
-        text-transform: uppercase;
-        color: white;
-      }
-    }
-
-    .dest-time {
-      position: absolute;
-      left: 50%;
-      right: 22.58%;
-      top: 87.08%;
-      bottom: 0%;
-      height: 62px;
-
-      .info-title {
-        position: absolute;
-        height: 17px;
-        top: calc(50% - 17px/2 - 22px);
-        font-family: $barlowCond;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 2.3625px;
-        text-transform: uppercase;
-        color: $lightGray;
-      }
-
-      .info-number {
-        position: absolute;
-        height: 32px;
-        top: calc(50% - 32px/2 + 14.5px);
-        font-family: $belle;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 32px;
-        text-transform: uppercase;
-        color: white;
+      .dest-details{
+        width: 573px;
+        height: fit-content;
+        margin-top: 5vh;
+        .dest-nav{
+          display: flex;
+          justify-content: center;
+        }
+        .dest-name{
+          margin-top: 4vh;
+          p{
+            font-size: 80px;
+            line-height: 92px;
+            text-align: center;
+          }
+        }
+        .dest-description{
+          margin-top: 3vh;
+          p{
+            height: 84px;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+          }
+        }
+        .line{
+          margin: 2vh auto 0 auto;
+          width: 572px;
+        }
+        .dest-info{
+          width: 572px;
+          .distance{
+            justify-content: center;
+            .dest-distance{
+              text-align: center;
+            }
+            .dest-time{
+              text-align: center;
+            }
+          }
+        }
       }
     }
   }
