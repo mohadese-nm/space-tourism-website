@@ -85,4 +85,18 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .nav-links{
+        width: 240px;
+        height: 28px;
+        .link-column{
+            .dest-link{
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 2.3625px;
+            }
+        }
+    }
+}
 </style>

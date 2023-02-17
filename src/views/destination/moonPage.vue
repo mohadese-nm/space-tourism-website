@@ -224,6 +224,8 @@ export default {
 @media screen and (max-width:992px){
   .container{
     .dest-content{
+      margin: 6vh auto 0 auto;
+      max-width: 360px;
       .dest-img{
         max-width: 330px;
         max-height: 330px;
@@ -240,10 +242,15 @@ export default {
   .container{
     .dest-content{
       .dest-img{
-
+        max-width: 173px;
+        max-height: 173px;
+        img{
+          width: 170px;
+          height: 170px;
+        }
       }
       .dest-details{
-        
+
       }
     }
   }
