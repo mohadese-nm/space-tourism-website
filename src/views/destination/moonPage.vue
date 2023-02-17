@@ -220,4 +220,33 @@ export default {
     }
   }
 }
+
+@media screen and (max-width:992px){
+  .container{
+    .dest-content{
+      .dest-img{
+        max-width: 330px;
+        max-height: 330px;
+        img{
+          width: 320px;
+          height: 320px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  .container{
+    .dest-content{
+      .dest-img{
+
+      }
+      .dest-details{
+        
+      }
+    }
+  }
+}
+
 </style>

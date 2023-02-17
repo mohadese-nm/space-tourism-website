@@ -85,8 +85,9 @@ export default {
 
 @media screen and (max-width:1200px){
   .content{
-    background-image: url(@/assets/destination/background-destination-tablet.jpg);
     height: 1024px;
+    background-image: url(@/assets/destination/background-destination-tablet.jpg);
+    background-size: cover;
     .dest-header{
       top: 136px;
       left: 4vw;
@@ -101,6 +102,35 @@ export default {
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 3.375px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  .content{
+    height: 860px;
+    background-image: url(@/assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    .dest-header{
+      width: 221px;
+      position: relative;
+      top: 8px;
+      margin-right: auto;
+      margin-left: auto;
+      span{
+        width: 15px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+      }
+      .dest-text{
+        width: 205px;
+        height: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
       }
     }
   }
