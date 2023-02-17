@@ -224,6 +224,7 @@
 
 @media screen and (max-width: 768px){
     .navigation{
+        height: 80px;
         .nav-logo{
             width: 40px;
             height: 40px;

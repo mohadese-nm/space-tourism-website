@@ -2,10 +2,15 @@
   <div class="content">
     <navigation-bar></navigation-bar>
     <div class="container">
-      <div class="dest-header">
-        <span>01</span><p class="dest-text">Pick your destination</p>
+      <div class="row dest-content">
+        <div class="col-12 dest-header">
+          <span>01</span><p class="dest-text">Pick your destination</p>
+        </div>
+        <div class="col-12">
+          <router-view></router-view>
+        </div>
       </div>
-        <router-view></router-view>
+
     </div>
   </div>
 </template>
@@ -33,18 +38,13 @@ export default {
   background-image: url(@/assets/destination/background-destination-desktop.jpg);
   background-size: cover;
   .dest-header{
-    position: absolute;
-    width: 382px;
+    width: 420px;
     height: 34px;
-    left: 166.5px;
-    top: 200px;
+    margin-top: 15vh;
+    margin-left: 8vw;
     span{
       width: 26px;
-      position: absolute;
       height: 34px;
-      left: 0%;
-      right: 93.19%;
-      top: calc(50% - 34px/2);
       font-family: $barlowCond;
       font-style: normal;
       font-weight: 700;
@@ -56,12 +56,10 @@ export default {
       opacity: 0.25;
     }
     .dest-text{
-      position: absolute;
+      padding-left: 28px;
+      display: inline-block;
       height: 34px;
-      width: 327px;
-      left: 14.14%;
-      right: 1.57%;
-      top: calc(50% - 34px/2);
+      width: 360px;
       font-family: $barlowCond;
       font-style: normal;
       font-weight: 400;
@@ -72,15 +70,6 @@ export default {
       color: white;
     }
   }
-
-  .dest-nav {
-    width: 285px;
-    height: 34px;
-    position: absolute;
-    left: 900px;
-    top: 310px;
-  }
-
 }
 
 @media screen and (max-width:1200px){
@@ -89,16 +78,17 @@ export default {
     background-image: url(@/assets/destination/background-destination-tablet.jpg);
     background-size: cover;
     .dest-header{
-      top: 136px;
-      left: 4vw;
-      width: 272px;
-      height: 24px;
+      width: 340px;
+      height: 34px;
+      margin-top: 8vh;
+      margin-left: 0;
       span{
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 3.375px;
       }
       .dest-text{
+        display: inline;
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 3.375px;
@@ -113,11 +103,35 @@ export default {
     background-image: url(@/assets/destination/background-destination-mobile.jpg);
     background-size: cover;
     .dest-header{
-      width: 221px;
-      position: relative;
-      top: 8px;
-      margin-right: auto;
-      margin-left: auto;
+      width: 280px;
+      margin: 0 auto 0 auto;
+      span{
+        width: 17px;
+        height: 21px;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 2.9px;
+      }
+      .dest-text{
+        padding-left: 18px;
+        width: 205px;
+        height: 20px;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 2.9px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:576px){
+  .content{
+    height: 860px;
+    background-image: url(@/assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    .dest-header{
+      width: 260px;
+      margin: 0 auto 0 auto;
       span{
         width: 15px;
         height: 19px;
@@ -126,6 +140,7 @@ export default {
         letter-spacing: 2.7px;
       }
       .dest-text{
+        padding-left: 18px;
         width: 205px;
         height: 20px;
         font-size: 16px;
