@@ -31,4 +31,11 @@ export default {
   background-image: url(@/assets/crew/background-crew-desktop.jpg);
   background-size: cover;
 }
+
+@media screen and (max-width:992px){
+  .content{
+    height:1024px;
+    background-image: url(@/assets/crew/background-crew-tablet.jpg);
+  }
+}
 </style>

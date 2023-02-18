@@ -36,34 +36,55 @@ export default {
 
 <style lang="scss" scoped>
 @use '@/assets/styles/-variables.scss' as *;
-.nav-links{
-    width: 135px;
-    height: 16px;
-    .link-column{
-        padding: 0;
-        .crew-link{
-            .circle{
-            border-radius: 50%;
-            width: 15px;
-            height: 15px;
-            background-color: white;
-            opacity: 0.17;
-            }
-
-            &:hover {
+.container{
+    margin-top: 0;
+    .nav-links{
+        width: 135px;
+        height: 16px;
+        .link-column{
+            padding: 0;
+            .crew-link{
                 .circle{
-                    opacity: 0.5;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                background-color: white;
+                opacity: 0.17;
                 }
-            }
 
-            &.router-link-active {
-                .circle{
-                    opacity: 1;
+                &:hover {
+                    .circle{
+                        opacity: 0.5;
+                    }
                 }
+
+                &.router-link-active {
+                    .circle{
+                        opacity: 1;
+                    }
+                }
+            
             }
-        
+            
         }
-        
+    }
+}
+@media screen and (max-width:992px){
+    .container{
+        .nav-links{
+            width: 100px;
+            height: 12px;
+            margin-right: auto;
+            margin-left: auto;
+            .link-column{
+                .crew-link{
+                    .circle{
+                        width: 11px;
+                        height: 11px;
+                    }
+                }
+            }
+        }
     }
 }
 </style>
