@@ -142,7 +142,7 @@ export default {
             .crew-image{
                 img{
                     width: 440px;
-                    height:490px;
+                    height:560px;
                 }   
             }
         }

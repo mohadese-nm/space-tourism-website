@@ -150,7 +150,6 @@ export default {
             .crew-image{
                 img{
                     width: 440px;
-                    height:480px;
                 }   
             }
         }
@@ -210,8 +209,7 @@ export default {
                 width: 460px;
                 height: 540px;
                 img{
-                    width: 380px;
-                    height: 420px;
+                    width: 400px;
                     left: 50%;
                     margin-left: -180px;
                 }
