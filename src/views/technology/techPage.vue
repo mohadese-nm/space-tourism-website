@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <navigation-bar></navigation-bar>
-    <div class="container">
+    <div class="container tech-container">
       <div class="row tech-content">
         <div class="col-12 tech-header">
           <span>01</span><p class="tech-text">Pick your destination</p>
@@ -71,7 +71,7 @@ export default {
   }
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1201px){
   .content{
     .tech-header{
       width: 340px;
@@ -95,13 +95,17 @@ export default {
 @media screen and (max-width:992px){
   .content{
     height: 1024px;
-    background-image: url(@/assets/crew/background-crew-tablet.jpg);
+    background-image: url(@/assets/technology/background-technology-tablet.jpg);
+    background-size: cover;
+    .tech-header{
+      margin-top: 7vh;
+    }
   }
 }
 @media screen and (max-width:768px){
   .content{
     height: 860px;
-    background-image: url(@/assets/crew/background-crew-mobile.jpg);
+    background-image: url(@/assets/technology/background-technology-mobile.jpg);
     background-size: cover;
     .tech-header{
       width: 280px;
@@ -131,7 +135,7 @@ export default {
     height: 800px;
     .tech-header{
       width: 260px;
-      margin: 20px auto 0 auto;
+      margin: 0 auto 0 auto;
       span{
         width: 15px;
         height: 19px;
