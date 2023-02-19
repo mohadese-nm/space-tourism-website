@@ -3,6 +3,7 @@
         <div class="row crew-content">
             <div class="col-lg crew-image">
                 <img src="../../assets/crew/image-mark-shuttleworth.webp">
+                <div class="line"></div>
             </div>
             <div class="col-lg crew-info order-md-first">
                 <div class="row">
@@ -94,6 +95,9 @@ export default {
                 bottom: 0;
                 
             }
+            .line{
+                display: none;
+            }
         }
     }
 }
@@ -159,6 +163,106 @@ export default {
                     height: 460px;
                     left: 50%;
                     margin-left: -180px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        .crew-content{
+            max-width: 516px;
+            margin-top: 40px;
+            .crew-info{
+                max-width: 516px;
+                .crew-role{
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                .crew-name{
+                    font-size: 40px;
+                    line-height: 38px;
+                }
+                .crew-about{
+                    .about-text{
+                        width: 500px;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+                .crew-nav{
+                    margin-top: 35px;
+                }
+            }
+            .crew-image{
+                height: 310px;
+                text-align: center;
+                img{
+                    position: static;
+                    width: 200px;
+                    height: 300px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                .line{
+                    display: block;
+                    max-width: 500px;
+                    height: 1px;
+                    background: #383B4B;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    .container{
+        .crew-content{
+            margin-top: 80px;
+            max-width: 400px;
+            .crew-info{
+                max-width: 400px;
+                .crew-role{
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                .crew-name{
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                .crew-about{
+                    .about-text{
+                        max-width: 370px;
+                        font-size: 15px;
+                        line-height: 25px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+                .crew-nav{
+                    margin-top: 35px;
+                }
+            }
+            .crew-image{
+                max-width: 400px;
+                height: 230px;
+                text-align: center;
+                img{
+                    position: static;
+                    width: 170px;
+                    height: 235px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                .line{
+                    display: block;
+                    max-width: 500px;
+                    height: 1px;
+                    background: #383B4B;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
         }

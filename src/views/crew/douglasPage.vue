@@ -172,6 +172,7 @@ export default {
     .container{
         .crew-content{
             margin-top: 40px;
+            max-width: 516px;
             .crew-info{
                 max-width: 516px;
                 .crew-role{
@@ -198,8 +199,60 @@ export default {
                 text-align: center;
                 img{
                     position: static;
-                    width: 250px;
+                    width: 220px;
                     height: 300px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                .line{
+                    display: block;
+                    max-width: 500px;
+                    height: 1px;
+                    background: #383B4B;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    .container{
+        .crew-content{
+            margin-top: 80px;
+            max-width: 400px;
+            .crew-info{
+                max-width: 400px;
+                .crew-role{
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                .crew-name{
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                .crew-about{
+                    .about-text{
+                        max-width: 370px;
+                        font-size: 15px;
+                        line-height: 25px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+                .crew-nav{
+                    margin-top: 35px;
+                }
+            }
+            .crew-image{
+                height: 230px;
+                max-width: 400px;
+                text-align: center;
+                img{
+                    position: static;
+                    width: 200px;
+                    height: 235px;
                     margin-right: auto;
                     margin-left: auto;
                 }

@@ -128,9 +128,10 @@ export default {
 
 @media screen and (max-width:576px){
   .content{
+    height: 800px;
     .crew-header{
       width: 260px;
-      margin: 0 auto 0 auto;
+      margin: 20px auto 0 auto;
       span{
         width: 15px;
         height: 19px;
