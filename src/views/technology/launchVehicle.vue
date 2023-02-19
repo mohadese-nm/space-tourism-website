@@ -2,29 +2,19 @@
   <div class="container">
     <div class="row">
         <div class="col-lg-7 tech-info align-items-center">
-            <div class="row">
-                <div class="col tech-header">
-                    <span>03</span>
-                    <p class="header-text"> space launch 101</p>
-                </div>
-            </div>
             <div class="row main-text">
                 <div class="col-lg-3 tech-nav">
                     <tech-nav></tech-nav>
                 </div>
                 <div class="col-lg-9 tech-description">
                     <div class="row">
-                        <div class="col terminology">
+                        <div class="col-12 terminology">
                             <p>the terminology ...</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col tech-name">
+                        <div class="col-12 tech-name">
                             <p>launch vehicle</p>
-                        </div>
-                    </div> 
-                    <div class="row">   
-                        <div class="col tech-about">
+                        </div> 
+                        <div class="col-12 tech-about">
                             <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to 
                                 carry a payload from Earth's surface to space, usually to Earth orbit or 
                                 beyond. Our WEB-X carrier rocket is the most powerful in operation. 
