@@ -4,7 +4,7 @@
     <div class="container tech-container">
       <div class="row tech-content">
         <div class="col-12 tech-header">
-          <span>01</span><p class="tech-text">Pick your destination</p>
+          <span>03</span><p class="tech-text">SPACE LAUNCH 101</p>
         </div>
         <div class="col-12">
           <router-view></router-view>
